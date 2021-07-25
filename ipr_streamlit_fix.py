@@ -269,7 +269,7 @@ elif ipr_type == 'Fetkovich':
         df = pd.DataFrame(columns = ['pwf','q'], data=[[1653,252],[1507,516],[1335,768]])
         
 Pres = st.sidebar.number_input("Reservoir Pressure (psi): ",step=10.0,min_value=0.0,value=1734.0)
-pb = st.sidebar.number_input("Bubble Point Pressure (psi) ",step=10.0,max_value=float(Pres),min_value=0.0,value=1680.0)
+pb = st.sidebar.number_input("Bubble Point Pressure (psi) ",step=10.0,min_value=0.0,value=1680.0)
 wc = st.sidebar.number_input("Water Cut (%): ",step=1.0,max_value=100.0,min_value=0.0,value=50.0)
 gor = st.sidebar.number_input("Gas Oil Ratio (SCF/STB) ",step=10.0,min_value=0.0,value=1000.0)
 

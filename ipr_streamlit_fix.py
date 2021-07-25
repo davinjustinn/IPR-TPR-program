@@ -244,6 +244,14 @@ def calc_tpr (qo,qg,z,t_avg,p_avg,d,rho_o,ift,sg_g,mo,mg,depth):
 
 #Streamlit Codes
 st.title('IPR - TPR Program')
+
+st.markdown('''
+This program is able to calculate and plot the Inflow Performance Relationship (IPR) and Tubing Performance Relationship (TPR) to determine the operating point of particular well.
+* For the IPR calculation, the program use Fetkovich, Vogel, and Straight Line method
+* For the TPR calculation, the method use Beggs and Brill correlation
+
+''')
+
 st.sidebar.write('# IPR Inputs')
 ipr_type = st.sidebar.selectbox("Choose IPR Method: ",['Vogel','Fetkovich','Straight Line'])
 
